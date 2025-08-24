@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "713246683474",
+    "project_id": "dlr-zone",
+    "storage_bucket": "dlr-zone.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713246683474:android:dd79f24fd45d4a914a8a8b",
+        "android_client_info": {
+          "package_name": "com.msoltec.dlradmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "713246683474-08e3rso9raml1g6o6ain366tqc4ie6ri.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.msoltec.dlradmin",
+            "certificate_hash": "63e40227ac5b969d7df144d4a1176874fa8bec92"
+          }
+        },
+        {
+          "client_id": "713246683474-o0eau77k1h07d7fchsr7apdgn6c4ql62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl9bbz7xeQpRGFq_-zBqrkMkBidjW9U2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "713246683474-o0eau77k1h07d7fchsr7apdgn6c4ql62.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "713246683474-uv1pbg8tb7av8cn8q35akr9tdnapatth.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mobileAdminApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

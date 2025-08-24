@@ -1,0 +1,29 @@
+📌 CONTEXT REMINDER FOR CHATGPT
+
+Project: Flutter mobile_admin_app
+Location: C:\gcp-management\mobile_admin_app\apps\mobile_admin_app
+
+Current Issue:
+- The custom bird logo no longer appears during the native splash screen.
+- Instead, the default Flutter logo (blurry) is shown while the app loads (~1–2 seconds).
+- This worked before, but after recent patches, the logo setup regressed.
+
+What We Have Done:
+1. Applied a patch that added an exit button — patch succeeded.
+2. Confirmed that flutter_native_splash is still configured.
+3. Compared original vs. current files — some differences spotted.
+4. Ensured `BuildRunApp.ps1` script can clean, fetch deps, and run app.
+5. Verified package ID and adb path fixes.
+
+Next Steps (to solve logo issue):
+- Re-check `pubspec.yaml` flutter_native_splash section (should point to bird logo asset).
+- Confirm the bird logo file exists in `assets/` and path matches exactly.
+- Regenerate splash with:
+    flutter pub run flutter_native_splash:create --path=pubspec.yaml
+- Verify that generated files in `android/app/src/main/res/drawable*` reference bird logo, not Flutter default.
+- If mismatch remains, copy known-good asset from the original source ZIP into assets and regenerate.
+- Test with `.\BuildRunApp.ps1 -Clean` again.
+
+Goal:
+- Restore bird logo as the only splash screen image (both native splash and Flutter intermediate splash).
+
